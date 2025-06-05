@@ -600,10 +600,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1232194109889338475, guid: c0ed38ef324434c11932053e313ee249,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232194109889338475, guid: c0ed38ef324434c11932053e313ee249,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232194109889338475, guid: c0ed38ef324434c11932053e313ee249,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232194109889338475, guid: c0ed38ef324434c11932053e313ee249,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9659258
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232194109889338475, guid: c0ed38ef324434c11932053e313ee249,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.2588191
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232194109889338475, guid: c0ed38ef324434c11932053e313ee249,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 1756016441769253617, guid: c0ed38ef324434c11932053e313ee249,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708098886721688583, guid: c0ed38ef324434c11932053e313ee249,
+        type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2708098886721688583, guid: c0ed38ef324434c11932053e313ee249,
         type: 3}
@@ -613,37 +648,52 @@ PrefabInstance:
     - target: {fileID: 2708098886721688583, guid: c0ed38ef324434c11932053e313ee249,
         type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.31764707
+      value: 0.31372553
       objectReference: {fileID: 0}
     - target: {fileID: 2708098886721688583, guid: c0ed38ef324434c11932053e313ee249,
         type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 0.31764707
+      value: 0.78039217
       objectReference: {fileID: 0}
     - target: {fileID: 2708098886721688583, guid: c0ed38ef324434c11932053e313ee249,
         type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.31764707
+      value: 0.69307864
       objectReference: {fileID: 0}
     - target: {fileID: 2708098886721688583, guid: c0ed38ef324434c11932053e313ee249,
         type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 3019475709834808232, guid: c0ed38ef324434c11932053e313ee249,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3019475709834808232, guid: c0ed38ef324434c11932053e313ee249,
+        type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 3019475709834808232, guid: c0ed38ef324434c11932053e313ee249,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3232604978140782981, guid: c0ed38ef324434c11932053e313ee249,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.32
       objectReference: {fileID: 0}
     - target: {fileID: 3232604978140782981, guid: c0ed38ef324434c11932053e313ee249,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.67
       objectReference: {fileID: 0}
     - target: {fileID: 3232604978140782981, guid: c0ed38ef324434c11932053e313ee249,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 2.69
       objectReference: {fileID: 0}
     - target: {fileID: 3232604978140782981, guid: c0ed38ef324434c11932053e313ee249,
         type: 3}
