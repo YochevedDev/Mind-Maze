@@ -29,18 +29,19 @@ public class RoomBuilder : MonoBehaviour
         ceiling.transform.parent = roomRoot;
 
         // Walls
-        CreateWall("BackWall", new Vector3(0, 1.5f, -5f), new Vector3(10, 3, 0.1f));
-        CreateWall("FrontWall", new Vector3(0, 1.5f, 5f), new Vector3(10, 3, 0.1f));
-        CreateWall("LeftWall", new Vector3(-5f, 1.5f, 0), new Vector3(0.1f, 3, 10));
-        CreateWall("RightWall", new Vector3(5f, 1.5f, 0), new Vector3(0.1f, 3, 10));
+        CreateWall("BackWall", new Vector3(0, 1.5f, -5f), new Vector3(10, 3, 0.1f), Quaternion.Euler(0, 180f, 0));
+        CreateWall("FrontWall", new Vector3(0, 1.5f, 5f), new Vector3(10, 3, 0.1f), Quaternion.identity);
+        CreateWall("LeftWall", new Vector3(-5f, 1.5f, 0), new Vector3(0.1f, 3, 10), Quaternion.Euler(0, -180f, 0));
+        CreateWall("RightWall", new Vector3(5f, 1.5f, 0), new Vector3(0.1f, 3, 10), Quaternion.identity);
     }
 
-    void CreateWall(string name, Vector3 pos, Vector3 scale)
+    void CreateWall(string name, Vector3 pos, Vector3 scale, Quaternion rotation)
     {
         GameObject wall = GameObject.CreatePrimitive(PrimitiveType.Cube);
         wall.name = roomName + "_" + name;
         wall.transform.position = pos;
         wall.transform.localScale = scale;
+        wall.transform.localRotation = rotation;
         wall.GetComponent<Renderer>().material.color = Color.white;
         wall.transform.parent = roomRoot;
     }
