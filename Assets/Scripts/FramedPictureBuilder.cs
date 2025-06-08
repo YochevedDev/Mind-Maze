@@ -5,7 +5,7 @@ using UnityEditor;
 #endif
 
 [ExecuteInEditMode]
-public class HintPictureBuilder : MonoBehaviour
+public class FramedPictureBuilder : MonoBehaviour
 {
     public Texture2D imageTexture;
 
