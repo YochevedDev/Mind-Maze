@@ -52,14 +52,7 @@ public class HintPictureGalleryBuilder : MonoBehaviour
             DestroyImmediate(transform.GetChild(i).gameObject);
         }
 
-        for (int i = 0; i < imageTextures.Length; i++)
-        {
-            Debug.Log($"Texture {i} is {(imageTextures[i] == null ? "null" : imageTextures[i].name)}");
-            Debug.Log($"Positions {i} is {(positions[i] == null ? "null" : positions[i])}");
-        }
-
-
-        // Create 6 pictures with appropriate size and position
+        // Create 7 pictures with appropriate size and position
         for (int i = 0; i < 7; i++)
         {
             GameObject pictureObj = new GameObject("Picture_" + i);
