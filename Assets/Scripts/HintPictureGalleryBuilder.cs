@@ -57,6 +57,12 @@ public class HintPictureGalleryBuilder : MonoBehaviour
         {
             GameObject pictureObj = new GameObject("Picture_" + i);
             pictureObj.transform.SetParent(this.transform, false);
+
+            // Slightly offset the Z position to prevent z-fighting
+            Vector3 pos = positions[i];
+            pos.z += 0.001f * i;
+            pictureObj.transform.localPosition = pos;
+
             pictureObj.transform.localPosition = positions[i];
             pictureObj.transform.localRotation = Quaternion.identity;
 
